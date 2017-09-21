@@ -1,0 +1,77 @@
+body{
+	color:white;
+	
+}
+.Home{
+	text-align: center;
+}
+.mainTitleAndDescription {
+  background-color: transparent;  
+  font-size:20px;
+  text-align: center;
+  width:100%;
+}
+#mainTitle{
+  font-family: 'Great Vibes';
+  font-size: 3.25em;  
+  color: white;
+  width:100%;
+  margin-bottom: 10px;
+}
+.mainDescription{  
+  margin-left: auto;
+  margin-right: auto;
+}
+#mainDescriptionText{
+  font-family: 'Zilla Slab Highlight';
+  color: white;
+  font-size: 1.25em;
+  margin-top:10%;
+  max-width: 850px;
+
+}
+@media screen and (max-width:380px){
+  .mainTitleAndDescription {
+    text-align: center;
+    width:100%;
+  }
+  #mainTitle{
+    font-size: 0.5em;   
+    margin-bottom: 5px; 
+  }
+  #mainDescriptionText{
+    font-size: 0.25em;    
+  }  
+}
+@media screen and (max-width:541px){
+  .mainTitleAndDescription {
+    text-align: center;
+    width:100%;
+  }
+  #mainTitle{    
+    font-size: 2.5em;    
+    margin-bottom: 1px;
+  }
+  #mainDescriptionText{
+    font-size: 1.25em;
+    
+  }
+
+  
+}
+@media screen and (max-width:780px){
+  .mainTitleAndDescription {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    width:100%;
+  }
+  #mainTitle{    
+    font-size: 2.0em;    
+    margin-bottom: 1px;
+  }
+  #mainDescriptionText{
+    font-size: 1.25em;
+    
+  }  
+}

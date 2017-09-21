@@ -1,0 +1,26 @@
+body{
+	color:white;
+}
+.Buttons{
+  position: absolute;
+  bottom:10px;
+  width: 100%;
+}
+.buttonsDiv{
+  display: flex;
+  justify-content: center;
+
+}
+.buttons{
+  font-size: 1.25em;
+  background: white;
+  border:none;
+  font-family: 'Khand';
+  margin-left:5px;  
+}
+.buttons:hover{
+  background: purple;
+  color:white;
+}
+
+
