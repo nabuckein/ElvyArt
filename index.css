@@ -16,3 +16,18 @@ body {
 	height:100%;
 }
 [data-reactroot] { height: 100% }
+
+
+@keyframes opacitychange
+    {
+      0%   {opacity: 0.0;}
+     
+      100% {background: 1.0;}
+    }
+
+@-webkit-keyframes opacitychange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {opacity: 0.0;}
+     
+      100% {background: 1.0;}
+    }

@@ -2,7 +2,7 @@ body{
 	color:white;	
 }
 .tinted-background{
-	z-index: 1;
+	  z-index: 1;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -12,7 +12,10 @@ body{
     background: rgba(100, 90, 220, 0.7); /*can be anything, of course*/
 
 }
-
+.Gallery{
+  background: url("./images/background2blurred.jpg") no-repeat center center fixed;  
+  background-size: cover;
+}
 .images{
 	border-radius: 10px;
 	max-width: 400px;
@@ -37,20 +40,4 @@ body{
 
 
 
-    @keyframes colorchange
-    {
-      0%   {background: red;}
-      25%  {background: yellow;}
-      50%  {background: blue;}
-      75%  {background: green;}
-      100% {background: red;}
-    }
-
-    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-    {
-      0%   {background: red;}
-      25%  {background: yellow;}
-      50%  {background: blue;}
-      75%  {background: green;}
-      100% {background: red;}
-    }
+    

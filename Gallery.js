@@ -45,7 +45,7 @@ class Gallery extends Component {
       	    <p className="imageTitle">Red Pointer Clock</p>
       	    <div className="imageAndArrows">
       	    	<i className="fa fa-arrow-circle-left" aria-hidden="true" onClick={this.toNextImage}></i>
-        		  <img className="images" src={this.state.imgToDisplay}></img>
+        		  <img alt="test1" className="images" src={this.state.imgToDisplay} style={imagesStyle}></img>
         		  <i className="fa fa-arrow-circle-right" aria-hidden="true" onClick={this.toPreviousImage}></i>
         	</div>
        		<p className="imageDescriptionLine1">Diameter: 50cm (19.7")</p>
@@ -57,11 +57,16 @@ class Gallery extends Component {
 export default Gallery;
 
 const GalleryStyles = {
-  textAlign: 'center',
+  marginLeft:'auto',
+  marginRight:'auto',
+  textAlign:'center',
+  borderRadius:'10px',
   fontSize: '2em',
   fontFamily: 'Just Another Hand',
-  background: 'black',
-  height: '100%',
-  animation: 'colorchange 10s'
+  width:'50%',
+  animation: 'opacitychange 0.15s'
+}
 
+const imagesStyle = {
+	animation: 'opacitychange 2.5s'
 }
