@@ -15,29 +15,74 @@ body{
 .Gallery{
   background: url("./images/background2blurred.jpg") no-repeat center center fixed;  
   background-size: cover;
+  
 }
-.images{
-	border-radius: 10px;
-	max-width: 400px;
-	max-height: 400px;
-	margin-left:20px;
-	margin-right: 20px;
-}	
-
+.linkTitles{
+	width: 20%;
+}
+.linkTitlesText{
+	font-size:25px;
+	text-align:center;
+	padding:10px;	
+	margin:0;
+}
+.linkDescriptions{
+	width: 20%;
+}
+.linkDescriptionsText{
+	font-size:25px;
+	text-align:center;
+	padding:10px;	
+	margin:0;
+}
+.imageTitle{
+	width: 100%;
+}
 .imageAndArrows{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 60%;
+	flex-wrap: wrap;
+	
+}
+
+.imageDescriptionLine1{
+	width: 100%;
 }
 .fa{
-	width: 100px;
-	font-size: 2em;
+	width: 5%;
+	font-size: 1.25em;
 }
 .fa:hover{
   color:purple;
-  font-size: 2.75em;
+  font-size: 1.5em;
+  cursor: pointer;
 }
+.linkTitlesText:hover{
+	font-size:26px;
+	color:turquoise;
+}
+@media screen and (max-width:600px){
+	.Gallery{
+		min-width:95%;
+		max-height: 100%;
+	}
+	.images{
+		max-height: 400px;
+		max-width: 400px;	;
+	}
+	.fa{
+		width: 60px;
+		font-size: 1.0em;
+	}
+	.fa:hover{
+  		font-size: 1.25em;
+	}
+	.imageDescriptionLine1{
+		font-size: 0.75em;
+	}
 
-
+}
 
     
