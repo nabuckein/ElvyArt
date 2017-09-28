@@ -40,7 +40,17 @@
     <title>ElvyArt</title>
   </head>
   <body>
-
+    <script type="text/javascript">
+      function getData(data){
+              if (data.ok) {
+                    // do something with the data here
+                    console.log(data.results);
+                } else {
+                    console.log("ERROR: " + data.error);
+              }
+         }
+         </script>
+         <script src="https://openapi.etsy.com/v2/shops/lolamoradesigns.js?includes=Listings&callback=getData&api_key=3opbzbdm86yk6w6661wcm5dd"></script>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
