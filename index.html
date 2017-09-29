@@ -37,42 +37,28 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>ElvyArt</title>
+    <title>Lola Mora Designs</title>
   </head>
   <body>
-    <script type="text/javascript">
-    var listingsObj = "null";
-      function getListingsAndShop(data){
-              if (data.ok) {
-                    // do something with the data here
-                    listingsObj = data.results[0].Listings;
-                    console.log(data);
-                } else {
-                    console.log("ERROR: " + data.error);
-              }
-         } 
-    </script>
-
     
 
     <script type="text/javascript">
-    var categoriesObj = "null";
-      function getCategories(data){
+    var listingsObj;
+      function getListingWithImages(data){
               if (data.ok) {
                     // do something with the data here
-                    //categoriesObj = data.results[0].Listings;
-                    console.log(data);
+                    listingsObj = data.results;
                 } else {
-                    console.log("ERROR: " + data.error);
+                    console.log("ERROR (index.html): " + data.error);
               }
          } 
     </script>
 
 
 
-    <script src="https://openapi.etsy.com/v2/shops/lolamoradesigns.js?includes=Listings&callback=getListingsAndShop&api_key=3opbzbdm86yk6w6661wcm5dd"></script>
     
-    <script src="https://openapi.etsy.com/v2/taxonomy/categories/lolamoradesigns.js?callback=getCategories&api_key=3opbzbdm86yk6w6661wcm5dd"></script>
+    <!--script src="https://openapi.etsy.com/v2/listings/546585978/images.js?callback=getCategories&api_key=3opbzbdm86yk6w6661wcm5dd"></script-->
+    <script src="https://openapi.etsy.com/v2/shops/lolamoradesigns/listings/active.js?includes=Images&callback=getListingWithImages&api_key=3opbzbdm86yk6w6661wcm5dd"></script>
 
     <noscript>
       You need to enable JavaScript to run this app.
