@@ -42,7 +42,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 60%;
+	width: 100%;
 	flex-wrap: wrap;
 	
 }
@@ -84,5 +84,3 @@ body{
 	}
 
 }
-
-    
