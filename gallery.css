@@ -50,6 +50,12 @@ body{
 .imageDescriptionLine1{
 	width: 100%;
 }
+.imageDescriptionLine2{
+	margin-top:20px;
+	width: 50%;
+	font-size: 24px;
+	color:white;
+}
 .fa{
 	width: 5%;
 	font-size: 1.25em;
