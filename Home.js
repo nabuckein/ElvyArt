@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './home.css';
+
 
 class Home extends Component {
   render() {
@@ -7,11 +7,8 @@ class Home extends Component {
     return (
     	<div className="Home" style={styles.Home}>
           <div className="mainTitleAndDescription" style={styles.mainTitleAndDescription}>
-            <h2 id="mainTitle" style={styles.mainTitle}>LolaMora Designs</h2>
-            <p className="mainDescription" id="mainDescriptionText" style={styles.mainDescription}>My name is Elvira Romano and I consider myself a contemporary artist. 
-            I was born and raised in Argentina, but I currently reside in South Carolina, U.S.A. Ever since my childhood years I've been interested in every aspect of the arts. 
-            I have experimented with sculpting, drawing with pencil and charcoal, collages, oil, and acrylics. Once upon a time I was into textiles and I worked on looms as well. 
-            Lately I've been doing paintings, incorporating resin mixed with acrylic paint. Art is beautiful, it relaxes your mind and for me art transports me into a world of infinite colors.</p>
+            <h2 id="mainTitle" style={styles.mainTitle}>ElvyArt Designs</h2>
+            <p className="mainDescription" id="mainDescriptionText" style={styles.mainDescription}>My name is Elvira Romano and I am an artist from Argentina, currently living in South Carolina. Lately I've been into resin finished paintings and elements, such as clocks and rotary table center pieces. I am always welcome to suggestions, as well as requests and comments. If you'd like to contact me please to to the "CONTACT" button/tab choose a preferred method.</p>
           </div>
           
         </div>);
@@ -44,7 +41,7 @@ const styles = {
 		fontFamily: 'Zilla Slab Highlight',
 		color: 'white',
 		fontSize: '1.25em',
-		marginTop:'5%',
+		marginTop:'10%',
 		maxWidth: '850px'
 	}
 }

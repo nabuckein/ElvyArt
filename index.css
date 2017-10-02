@@ -1,3 +1,4 @@
+
 html{
   height:100%;
 }
@@ -17,6 +18,18 @@ body {
 }
 [data-reactroot] { height: 100% }
 
+#backgroundVideo{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+
+}
 
 @keyframes opacitychange
     {

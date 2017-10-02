@@ -12,7 +12,7 @@
     font-size: 0.25em;    
   }  
 }
-@media screen and (max-width:541px){
+@media screen and (min-width:381px and max-width:541px){
   .mainTitleAndDescription {
     text-align: center;
     width:100%;
@@ -28,7 +28,7 @@
 
   
 }
-@media screen and (max-width:780px){
+@media screen and (min-width:542px and max-width:780px){
   .mainTitleAndDescription {
     text-align: center;
     margin-left: 10px;
@@ -44,3 +44,4 @@
     
   }  
 }
+
