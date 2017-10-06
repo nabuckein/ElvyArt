@@ -8,7 +8,7 @@ import Home from './Home.js';
 import Gallery from './Gallery.js';
 import Contact from './Contact.js';
 import Buttons from './Buttons.js';
-
+import {StyleRoot} from 'radium';
 
 class App extends Component {
 

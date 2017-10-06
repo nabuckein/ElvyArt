@@ -1,21 +1,11 @@
 body{
 	color:white;	
 }
-.tinted-background{
-	  z-index: 1;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    overflow: auto;
-    top: 0px;
-    left: 0px;
-    background: rgba(100, 90, 220, 0.7); /*can be anything, of course*/
 
-}
 .Gallery{
   background: url("./images/background2blurred.jpg") no-repeat center center fixed;  
   background-size: cover;
-  
+ 
 }
 .linkTitles{
 	width: 20%;
@@ -37,16 +27,26 @@ body{
 }
 .imageTitle{
 	width: 100%;
+	margin-top:0;
 }
 .imageAndArrows{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	width: 90%;
 	flex-wrap: wrap;
-	
+	margin-left:auto;
+	margin-right:auto;
 }
-
+.images{
+  animation: 'opacitychange 2.5s';
+  border-radius: 10px;
+  min-width:40%;
+  height: 400px;
+  margin-left:20px;
+  margin-right:20px;
+  overflow:scroll;
+}
 .imageDescriptionLine1{
 	width: 100%;
 }
@@ -56,37 +56,8 @@ body{
 	font-size: 24px;
 	color:white;
 }
-.fa{
-	width: 5%;
-	font-size: 1.25em;
-}
-.fa:hover{
-  color:purple;
-  font-size: 1.5em;
-  cursor: pointer;
-}
+
 .linkTitlesText:hover{
 	font-size:26px;
 	color:turquoise;
-}
-@media screen and (max-width:600px){
-	.Gallery{
-		min-width:95%;
-		max-height: 100%;
-	}
-	.images{
-		max-height: 400px;
-		max-width: 400px;	;
-	}
-	.fa{
-		width: 60px;
-		font-size: 1.0em;
-	}
-	.fa:hover{
-  		font-size: 1.25em;
-	}
-	.imageDescriptionLine1{
-		font-size: 0.75em;
-	}
-
 }
