@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Radium from 'radium';
+import {StyleRoot} from 'radium';
+
 import './home.css';
 
 class Home extends Component {
@@ -6,6 +9,7 @@ class Home extends Component {
 
     return (
     	<div className="Home" style={styles.Home}>
+    		<StyleRoot >
           <div className="mainTitleAndDescription" style={styles.mainTitleAndDescription}>
             <h2 id="mainTitle" style={styles.mainTitle}>LolaMora Designs</h2>
             <p className="mainDescription" id="mainDescriptionText" style={styles.mainDescription}>My name is Elvira Romano and I consider myself a contemporary artist. 
@@ -13,12 +17,12 @@ class Home extends Component {
             I have experimented with sculpting, drawing with pencil and charcoal, collages, oil, and acrylics. Once upon a time I was into textiles and I worked on looms as well. 
             Lately I've been doing paintings, incorporating resin mixed with acrylic paint. Art is beautiful, it relaxes your mind and for me art transports me into a world of infinite colors.</p>
           </div>
-          
+          </StyleRoot>
         </div>);
   }
 }
 
-export default Home;
+export default Radium(Home);
 
 const styles = {
 	Home:{
@@ -27,24 +31,54 @@ const styles = {
 	},
 	mainTitleAndDescription:{
 		backgroundColor: 'transparent',  
-		fontSize:'20px',
+		
 		textAlign: 'center',
 		width:'100%'
 	},
 	mainTitle:{
 		fontFamily: 'Great Vibes',
-  		fontSize: '5.25em',
+  		
   		color: 'white',
   		width:'100%',
-  		marginBottom: '10px'
+  		marginBottom: '10px',
+  		'@media(min-width:1001px)': {
+  			fontSize:70
+  		},
+  		'@media(max-width:1000px)': {
+  			fontSize:60
+  		},
+  		'@media(max-width:850px)': {
+  			fontSize:60
+  		},
+  		'@media(max-width:450px)': {
+  			fontSize:50
+  		},
+  		'@media(max-width:350px)': {
+  			fontSize:40
+  		}
 	},
 	mainDescription:{
 		marginLeft:'auto',
 		marginRight:'auto',
 		fontFamily: 'Zilla Slab Highlight',
-		color: 'white',
-		fontSize: '1.25em',
+		color: 'white',		
 		marginTop:'5%',
-		maxWidth: '850px'
+		maxWidth: '850px',
+		'@media(min-width:1001px)': {
+  			fontSize:26
+  		},
+		'@media(max-width:1000px)': {
+  			fontSize:22
+  		},
+  		'@media(max-width:850px)': {
+  			fontSize:18
+  		},
+  		'@media(max-width:450px)': {
+  			fontSize:16
+  		},
+  		'@media(max-width:450px)': {
+  			fontSize:14
+  		}
+		
 	}
 }
