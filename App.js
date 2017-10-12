@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './gallery.css';
-import './buttons.css';
-import './contact.css';
+
 import './home.css';
 import Home from './Home.js';
 import Gallery from './Gallery.js';
