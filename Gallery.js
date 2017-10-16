@@ -68,7 +68,7 @@ class Gallery extends React.Component {
               <p className="linkTitlesText">Paintings</p>
             </div>*/}
             <div className="imageAndArrows">
-              <p className="imageTitle">{this.state.listingsObj[imageNumber].title}</p>
+              <p className="imageTitle" style={imageTitleStyle}>{this.state.listingsObj[imageNumber].title} </p>
               <i key='k1' className="fa fa-arrow-circle-left" aria-hidden="true" onClick={this.toNextImage} style={faStyle}></i>
               <img alt="test1" className="images" src={this.imagesUrlArr[imageNumber]} style={imagesStyle}></img>
               <i key='k2' className="fa fa-arrow-circle-right" aria-hidden="true" onClick={this.toPreviousImage} style={faStyle}></i>
@@ -102,6 +102,18 @@ const GalleryStyles = {
   marginTop:'20px',
   marginBottom:'20px'
 }
+const imageTitleStyle = {
+
+  '@media (max-width: 800px)':{
+    fontSize:24
+  },
+  '@media (max-width: 600px)':{
+    fontSize:20
+  },
+  '@media (max-width: 400px)':{
+    fontSize:16
+  }
+}
 const imagesStyle = {
   animation: 'opacitychange 2.5s',
   borderRadius: '10px',
@@ -109,22 +121,39 @@ const imagesStyle = {
   height: '400px',
   marginLeft:'20px',
   marginRight:'20px',
-  overflow:'scroll'
+  overflow:'scroll',
+  '@media(min-width:1001px)': {
+        width:'50%'
+      },      
+    '@media(min-width:850px) and (max-width:1000px)': {
+        width:'60%'  
+      },
+      '@media(min-width:450px) and (max-width:850px)': {
+        width:'60%'
+      },
+      '@media(min-width:0px) and (max-width:450px)': {
+        width:'60%'
+      }
+
+
 }
 const faStyle = {
   
   ':hover':{
     color:'red'
   },
-  '@media (min-width:601px and max-width: 800px)':{
-    fontSize:30
-  },
-  '@media (min-width:401px and max-width: 600px)':{
-    fontSize:25
-  },
-  '@media (max-width: 400px)':{
-    fontSize:20
-  }
+  '@media(min-width:1001px)': {
+        fontSize:26
+      },      
+    '@media(min-width:850px) and (max-width:1000px)': {
+        fontSize:22   
+      },
+      '@media(min-width:450px) and (max-width:850px)': {
+        fontSize:18
+      },
+      '@media(min-width:0px) and (max-width:450px)': {
+        fontSize:14
+      }
 }
 
 const imageLink = {
@@ -132,5 +161,18 @@ const imageLink = {
   fontSize:25,
   textAlign:'center',
   padding:10,
-  margin:0
+  margin:0,
+  width:'100%',
+  '@media(min-width:1001px)': {
+        fontSize:26
+      },      
+    '@media(min-width:850px) and (max-width:1000px)': {
+        fontSize:22   
+      },
+      '@media(min-width:450px) and (max-width:850px)': {
+        fontSize:18
+      },
+      '@media(min-width:0px) and (max-width:450px)': {
+        fontSize:14
+      }
 }

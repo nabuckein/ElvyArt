@@ -42,19 +42,16 @@ const styles = {
   		width:'100%',
   		marginBottom: '10px',
   		'@media(min-width:1001px)': {
+  			fontSize:110
+  		},  		
+		'@media(min-width:850px) and (max-width:1000px)': {
+  			fontSize:70		
+  		},
+  		'@media(min-width:450px) and (max-width:850px)': {
   			fontSize:70
   		},
-  		'@media(max-width:1000px)': {
-  			fontSize:60
-  		},
-  		'@media(max-width:850px)': {
-  			fontSize:60
-  		},
-  		'@media(max-width:450px)': {
-  			fontSize:50
-  		},
-  		'@media(max-width:350px)': {
-  			fontSize:40
+  		'@media(min-width:0px) and (max-width:450px)': {
+  			fontSize:65
   		}
 	},
 	mainDescription:{
@@ -62,23 +59,27 @@ const styles = {
 		marginRight:'auto',
 		fontFamily: 'Zilla Slab Highlight',
 		color: 'white',		
-		marginTop:'5%',
-		maxWidth: '850px',
+		
+		
 		'@media(min-width:1001px)': {
-  			fontSize:26
+  			fontSize:24,
+  			marginTop:'5%',
+  			width:'90%'
   		},
-		'@media(max-width:1000px)': {
-  			fontSize:22
+		'@media(min-width:850px) and (max-width:1000px)': {
+  			fontSize:22,
+  			width:'75%',
+  			marginTop:'10%'
   		},
-  		'@media(max-width:850px)': {
-  			fontSize:18
+  		'@media(min-width:450px) and (max-width:850px)': {
+  			fontSize:16,
+  			width:'90%',
+  			marginTop:'10%'
   		},
-  		'@media(max-width:450px)': {
-  			fontSize:16
-  		},
-  		'@media(max-width:450px)': {
-  			fontSize:14
-  		}
+  		'@media(min-width:0px) and (max-width:450px)': {
+  			fontSize:16,
+  			marginTop:'15%',
+  			width:'90%'  		}
 		
 	}
 }
