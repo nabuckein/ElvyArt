@@ -51,7 +51,7 @@ const styles = {
   			fontSize:70
   		},
   		'@media(min-width:0px) and (max-width:450px)': {
-  			fontSize:65
+  			fontSize:40
   		}
 	},
 	mainDescription:{

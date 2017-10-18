@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
 import {StyleRoot} from 'radium';
-var image1 = require('./images/clock1.png');
-var image2 = require('./images/clock2.png');
-var image3 = require('./images/clock3.png');
+//var image1 = require('./images/clock1.png');
+//var image2 = require('./images/clock2.png');
+//var image3 = require('./images/clock3.png');
 /*var image4 = require('./images/cuttingBoard4.jpg');
 var image5 = require('./images/cuttingBoard5.png');
 var image6 = require('./images/cuttingBoard6.png');
 var image7 = require('./images/cuttingBoard7.png');*/
 
-var imagesArr = [image1, image2, image3];
+var imagesArr = [];
 var imageNumber = 0;
 
 
@@ -57,9 +57,10 @@ class Gallery extends React.Component {
       
 
       return (
-        
+        <div style={style}>
+        <StyleRoot style={style}>
         <div className="Gallery" style={GalleryStyles}>
-          <StyleRoot >
+          
             {/*<div className="linkTitles">
               <p className="linkTitlesText">Serving/Cutting Boards</p>
               <p className="linkTitlesText">Table Top</p>
@@ -67,7 +68,7 @@ class Gallery extends React.Component {
               <p className="linkTitlesText">Clocks</p>
               <p className="linkTitlesText">Paintings</p>
             </div>*/}
-            <div className="imageAndArrows">
+            <div className="imageAndArrows" style={imageAndArrowsStyle}>
               <p className="imageTitle" style={imageTitleStyle}>{this.state.listingsObj[imageNumber].title} </p>
               <i key='k1' className="fa fa-arrow-circle-left" aria-hidden="true" onClick={this.toNextImage} style={faStyle}></i>
               <img alt="test1" className="images" src={this.imagesUrlArr[imageNumber]} style={imagesStyle}></img>
@@ -78,12 +79,20 @@ class Gallery extends React.Component {
             {/*<div className="linkDescriptions">
               <p className="linkDescriptionsText">These items can be used as a serving tray as well as a cutting board. Wall decor ideas are also available in matching colors</p>
             </div>*/}
-          </StyleRoot>
+          
+        </div>
+        </StyleRoot>
         </div>
     );
   }
 }
 export default Radium(Gallery);
+const style = {
+  height:'100%'
+}
+const imageAndArrowsStyle = {
+  height:'100%'
+}
 
 const GalleryStyles = {
   
@@ -95,13 +104,29 @@ const GalleryStyles = {
   textAlign:'center',
   borderRadius:'10px',
   fontSize: '2em',
-  fontFamily: 'Just Another Hand',
-  width:'90%',
-  height:'90%',
+  fontFamily: 'Just Another Hand',  
+  
   animation: 'opacitychange 0.15s',
   marginTop:'20px',
-  marginBottom:'20px'
+  marginBottom:'20px',
+  '@media(min-width:1001px)': {
+    height:'80%',
+    width:'60%'
+  },      
+  '@media(min-width:850px) and (max-width:1000px)': {
+    height:'80%',
+    width:'80%'  
+  },
+  '@media(min-width:450px) and (max-width:850px)': {
+    height:'80%',
+    width:'80%'
+  },
+  '@media(min-width:0px) and (max-width:450px)': {
+    height:'80%',
+    width:'80%'
+  }
 }
+
 const imageTitleStyle = {
 
   '@media (max-width: 800px)':{
@@ -123,16 +148,20 @@ const imagesStyle = {
   marginRight:'20px',
   overflow:'scroll',
   '@media(min-width:1001px)': {
-        width:'50%'
+        width:'60%',
+        height:'60%'
       },      
     '@media(min-width:850px) and (max-width:1000px)': {
-        width:'60%'  
+        width:'50%',
+        height:'60%'
       },
       '@media(min-width:450px) and (max-width:850px)': {
-        width:'60%'
+        width:'60%',
+        height:'60%'
       },
       '@media(min-width:0px) and (max-width:450px)': {
-        width:'60%'
+        width:'50%',
+        height:'50%'
       }
 
 
