@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Radium from 'radium';
 import {StyleRoot} from 'radium';
 
-import './home.css';
 
 class Home extends Component {
   render() {

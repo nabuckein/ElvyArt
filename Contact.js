@@ -35,21 +35,22 @@ const ContactStyles ={
   fontFamily: 'Just Another Hand',
   
   animation: 'opacitychange 0.25s',
+  
   '@media (min-width:1001px)':{
     paddingTop: '5%',
     height:'80%'
   },
-  '@media (max-width:1000px)':{
+  '@media(min-width:850px) and (max-width:1000px)':{
     fontSize:30,
     height:'60%',
     paddingTop: '15%',
   },
-  '@media (max-width:800px)':{
+  '@media(min-width:450px) and (max-width:850px)':{
     fontSize:24,
     height:'70%',
     paddingTop: '15%',
   },
-  '@media (max-width:400px)':{
+  '@media(min-width:0px) and (max-width:450px)':{
     fontSize:18,
     height:'80%',
     paddingTop: '25%',

@@ -74,7 +74,7 @@ class Gallery extends React.Component {
               <img alt="test1" className="images" src={this.imagesUrlArr[imageNumber]} style={imagesStyle}></img>
               <i key='k2' className="fa fa-arrow-circle-right" aria-hidden="true" onClick={this.toPreviousImage} style={faStyle}></i>
               {/*<p className="imageDescriptionLine1">Diameter: 50cm (19.7")</p>*/}
-              <a href={this.imagesLinkArr[imageNumber]} className="imageDescriptionLine2" style={imageLink}>{this.imagesLinkArr[imageNumber]}</a>
+              <a href={this.imagesLinkArr[imageNumber]} className="imageDescriptionLine2" style={imageLink}>Click here for more information or to purchase via Etsy.</a>
             </div>
             {/*<div className="linkDescriptions">
               <p className="linkDescriptionsText">These items can be used as a serving tray as well as a cutting board. Wall decor ideas are also available in matching colors</p>
@@ -128,15 +128,20 @@ const GalleryStyles = {
 }
 
 const imageTitleStyle = {
-
-  '@media (max-width: 800px)':{
+  height:'90px',
+  marginBottom:0,
+  paddingTop:50,
+  '@media(min-width:1001px)': {
+    fontSize:36
+  },   
+  '@media(min-width:850px) and (max-width:1000px)':{
+    fontSize:32
+  },
+  '@media(min-width:450px) and (max-width:850px)':{
+    fontSize:28
+  },
+  '@media(min-width:0px) and (max-width:450px)':{
     fontSize:24
-  },
-  '@media (max-width: 600px)':{
-    fontSize:20
-  },
-  '@media (max-width: 400px)':{
-    fontSize:16
   }
 }
 const imagesStyle = {
@@ -181,7 +186,7 @@ const faStyle = {
         fontSize:18
       },
       '@media(min-width:0px) and (max-width:450px)': {
-        fontSize:14
+        fontSize:18
       }
 }
 
@@ -192,6 +197,7 @@ const imageLink = {
   padding:10,
   margin:0,
   width:'100%',
+  textDecoration:'none',
   '@media(min-width:1001px)': {
         fontSize:26
       },      
@@ -199,7 +205,7 @@ const imageLink = {
         fontSize:22   
       },
       '@media(min-width:450px) and (max-width:850px)': {
-        fontSize:18
+        fontSize:16
       },
       '@media(min-width:0px) and (max-width:450px)': {
         fontSize:14
